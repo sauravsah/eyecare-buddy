@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "EyeCare Buddy",
+  "version": "0.1.0",
+  "description": "A local-first screen-health companion for healthier screen habits.",
+  "minimum_chrome_version": "116",
+  "action": {
+    "default_title": "Open EyeCare Buddy"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["sidePanel", "storage"],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'; worker-src 'self'; connect-src 'self'"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  }
+}

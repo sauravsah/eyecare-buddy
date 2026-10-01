@@ -1,0 +1,14 @@
+node_modules/
+dist/
+outputs/
+work/
+
+.env
+.env.*
+!.env.example
+*.local
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
